@@ -1,0 +1,8 @@
+digraph {
+Board [ label=" Board " shape= box ]
+Dice [ label=" Dice " shape= box ]
+Game [ label=" Game " shape= box ]
+
+"Game" -> "Board" [style= dotted ]
+"Game" -> "Dice" [style= dotted ]
+}
