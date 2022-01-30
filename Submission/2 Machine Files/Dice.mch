@@ -1,4 +1,4 @@
-﻿/* Dice
+/* Dice
  * Author: ayesh
  * Creation date: 26/01/2022
  *
@@ -7,11 +7,11 @@
 MACHINE
     Dice
 
-CONCRETE_CONSTANTS
+CONSTANTS 
     diceNumbers // This constant set is used to represent the sides of a dice.
 
-PROPERTIES
+PROPERTIES 
     diceNumbers <: NAT1  // The set is a subset of the Natural number set.
-    & diceNumbers = 1 .. 6 // The set has numbers from 1 to 6.
+    & diceNumbers = 1..6 // The set has numbers from 1 to 6.
 
 END

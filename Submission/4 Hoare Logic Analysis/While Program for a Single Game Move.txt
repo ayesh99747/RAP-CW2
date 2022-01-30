@@ -1,0 +1,13 @@
+[position = 0 & roll > 0 & roll < 7]
+WHILE((position + roll) <= 100) DO
+	IF((position + roll) = snakeHead) THEN
+		position := snakeTail;
+	ELSE
+		IF(position + roll) = ladderBottom) THEN
+			position := ladderTop;
+		ELSE
+			position := position + roll;
+		END
+	END
+END
+[position = 100 & roll > 0 & roll < 7]

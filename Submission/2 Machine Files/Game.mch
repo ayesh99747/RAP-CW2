@@ -17,7 +17,6 @@ SETS
 DEFINITIONS
     hasPieceLandedOnSnakeHead(position) == (position : dom(snakes)); // Used to check if the square has a snake head.
     hasPieceLandedOnLadderBottom(position) == (position : dom(ladders)) // Used to check if the square has a ladder top.
-    
 VARIABLES       
     currentPosition, // Used to represent the current position on the board.
     numberOfSnakesEncountered, // Used to count the number of snakes gone down.
@@ -32,6 +31,8 @@ INVARIANT
     numberOfTurnsTaken : NAT & // The numberOfTurnsTaken is an element of the natural number set.
     squaresVisited : seq(board) // The squaresVisited is a sequence of board elements.
 
+    
+    
 INITIALISATION  
     // The currentPosition is the startingPosition(1) in the beginning.
     currentPosition := startingPosition || 

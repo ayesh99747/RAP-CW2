@@ -1,0 +1,252 @@
+digraph state {
+ graph [fontsize=12]
+rankdir=TB;
+"6" -> "ROOT-NODE" [label = "diceNumbers", color = "firebrick"];
+"5" -> "ROOT-NODE" [label = "diceNumbers", color = "firebrick"];
+"4" -> "ROOT-NODE" [label = "diceNumbers", color = "firebrick"];
+"3" -> "ROOT-NODE" [label = "diceNumbers", color = "firebrick"];
+"2" -> "ROOT-NODE" [label = "diceNumbers", color = "firebrick"];
+"1" -> "ROOT-NODE" [label = "diceNumbers", color = "firebrick"];
+"72" -> "90" [label = "ladders", color = "sienna"];
+"61" -> "99" [label = "ladders", color = "sienna"];
+"56" -> "84" [label = "ladders", color = "sienna"];
+"27" -> "53" [label = "ladders", color = "sienna"];
+"10" -> "12" [label = "ladders", color = "sienna"];
+"3" -> "39" [label = "ladders", color = "sienna"];
+"97" -> "75" [label = "snakes", color = "SlateBlue4"];
+"66" -> "52" [label = "snakes", color = "SlateBlue4"];
+"63" -> "60" [label = "snakes", color = "SlateBlue4"];
+"47" -> "25" [label = "snakes", color = "SlateBlue4"];
+"31" -> "4" [label = "snakes", color = "SlateBlue4"];
+"16" -> "13" [label = "snakes", color = "SlateBlue4"];
+"100" -> "ROOT-NODE" [label = "board", color = "black"];
+"99" -> "ROOT-NODE" [label = "board", color = "black"];
+"98" -> "ROOT-NODE" [label = "board", color = "black"];
+"97" -> "ROOT-NODE" [label = "board", color = "black"];
+"96" -> "ROOT-NODE" [label = "board", color = "black"];
+"95" -> "ROOT-NODE" [label = "board", color = "black"];
+"94" -> "ROOT-NODE" [label = "board", color = "black"];
+"93" -> "ROOT-NODE" [label = "board", color = "black"];
+"92" -> "ROOT-NODE" [label = "board", color = "black"];
+"91" -> "ROOT-NODE" [label = "board", color = "black"];
+"90" -> "ROOT-NODE" [label = "board", color = "black"];
+"89" -> "ROOT-NODE" [label = "board", color = "black"];
+"88" -> "ROOT-NODE" [label = "board", color = "black"];
+"87" -> "ROOT-NODE" [label = "board", color = "black"];
+"86" -> "ROOT-NODE" [label = "board", color = "black"];
+"85" -> "ROOT-NODE" [label = "board", color = "black"];
+"84" -> "ROOT-NODE" [label = "board", color = "black"];
+"83" -> "ROOT-NODE" [label = "board", color = "black"];
+"82" -> "ROOT-NODE" [label = "board", color = "black"];
+"81" -> "ROOT-NODE" [label = "board", color = "black"];
+"80" -> "ROOT-NODE" [label = "board", color = "black"];
+"79" -> "ROOT-NODE" [label = "board", color = "black"];
+"78" -> "ROOT-NODE" [label = "board", color = "black"];
+"77" -> "ROOT-NODE" [label = "board", color = "black"];
+"76" -> "ROOT-NODE" [label = "board", color = "black"];
+"75" -> "ROOT-NODE" [label = "board", color = "black"];
+"74" -> "ROOT-NODE" [label = "board", color = "black"];
+"73" -> "ROOT-NODE" [label = "board", color = "black"];
+"72" -> "ROOT-NODE" [label = "board", color = "black"];
+"71" -> "ROOT-NODE" [label = "board", color = "black"];
+"70" -> "ROOT-NODE" [label = "board", color = "black"];
+"69" -> "ROOT-NODE" [label = "board", color = "black"];
+"68" -> "ROOT-NODE" [label = "board", color = "black"];
+"67" -> "ROOT-NODE" [label = "board", color = "black"];
+"66" -> "ROOT-NODE" [label = "board", color = "black"];
+"65" -> "ROOT-NODE" [label = "board", color = "black"];
+"64" -> "ROOT-NODE" [label = "board", color = "black"];
+"63" -> "ROOT-NODE" [label = "board", color = "black"];
+"62" -> "ROOT-NODE" [label = "board", color = "black"];
+"61" -> "ROOT-NODE" [label = "board", color = "black"];
+"60" -> "ROOT-NODE" [label = "board", color = "black"];
+"59" -> "ROOT-NODE" [label = "board", color = "black"];
+"58" -> "ROOT-NODE" [label = "board", color = "black"];
+"57" -> "ROOT-NODE" [label = "board", color = "black"];
+"56" -> "ROOT-NODE" [label = "board", color = "black"];
+"55" -> "ROOT-NODE" [label = "board", color = "black"];
+"54" -> "ROOT-NODE" [label = "board", color = "black"];
+"53" -> "ROOT-NODE" [label = "board", color = "black"];
+"52" -> "ROOT-NODE" [label = "board", color = "black"];
+"51" -> "ROOT-NODE" [label = "board", color = "black"];
+"50" -> "ROOT-NODE" [label = "board", color = "black"];
+"49" -> "ROOT-NODE" [label = "board", color = "black"];
+"48" -> "ROOT-NODE" [label = "board", color = "black"];
+"47" -> "ROOT-NODE" [label = "board", color = "black"];
+"46" -> "ROOT-NODE" [label = "board", color = "black"];
+"45" -> "ROOT-NODE" [label = "board", color = "black"];
+"44" -> "ROOT-NODE" [label = "board", color = "black"];
+"43" -> "ROOT-NODE" [label = "board", color = "black"];
+"42" -> "ROOT-NODE" [label = "board", color = "black"];
+"41" -> "ROOT-NODE" [label = "board", color = "black"];
+"40" -> "ROOT-NODE" [label = "board", color = "black"];
+"39" -> "ROOT-NODE" [label = "board", color = "black"];
+"38" -> "ROOT-NODE" [label = "board", color = "black"];
+"37" -> "ROOT-NODE" [label = "board", color = "black"];
+"36" -> "ROOT-NODE" [label = "board", color = "black"];
+"35" -> "ROOT-NODE" [label = "board", color = "black"];
+"34" -> "ROOT-NODE" [label = "board", color = "black"];
+"33" -> "ROOT-NODE" [label = "board", color = "black"];
+"32" -> "ROOT-NODE" [label = "board", color = "black"];
+"31" -> "ROOT-NODE" [label = "board", color = "black"];
+"30" -> "ROOT-NODE" [label = "board", color = "black"];
+"29" -> "ROOT-NODE" [label = "board", color = "black"];
+"28" -> "ROOT-NODE" [label = "board", color = "black"];
+"27" -> "ROOT-NODE" [label = "board", color = "black"];
+"26" -> "ROOT-NODE" [label = "board", color = "black"];
+"25" -> "ROOT-NODE" [label = "board", color = "black"];
+"24" -> "ROOT-NODE" [label = "board", color = "black"];
+"23" -> "ROOT-NODE" [label = "board", color = "black"];
+"22" -> "ROOT-NODE" [label = "board", color = "black"];
+"21" -> "ROOT-NODE" [label = "board", color = "black"];
+"20" -> "ROOT-NODE" [label = "board", color = "black"];
+"19" -> "ROOT-NODE" [label = "board", color = "black"];
+"18" -> "ROOT-NODE" [label = "board", color = "black"];
+"17" -> "ROOT-NODE" [label = "board", color = "black"];
+"16" -> "ROOT-NODE" [label = "board", color = "black"];
+"15" -> "ROOT-NODE" [label = "board", color = "black"];
+"14" -> "ROOT-NODE" [label = "board", color = "black"];
+"13" -> "ROOT-NODE" [label = "board", color = "black"];
+"12" -> "ROOT-NODE" [label = "board", color = "black"];
+"11" -> "ROOT-NODE" [label = "board", color = "black"];
+"10" -> "ROOT-NODE" [label = "board", color = "black"];
+"9" -> "ROOT-NODE" [label = "board", color = "black"];
+"8" -> "ROOT-NODE" [label = "board", color = "black"];
+"7" -> "ROOT-NODE" [label = "board", color = "black"];
+"6" -> "ROOT-NODE" [label = "board", color = "black"];
+"5" -> "ROOT-NODE" [label = "board", color = "black"];
+"4" -> "ROOT-NODE" [label = "board", color = "black"];
+"3" -> "ROOT-NODE" [label = "board", color = "black"];
+"2" -> "ROOT-NODE" [label = "board", color = "black"];
+"1" -> "ROOT-NODE" [label = "board", color = "black"];
+"100" -> "ROOT-NODE" [label = "finishingPosition", color = "#efdf84"];
+"1" -> "ROOT-NODE" [label = "startingPosition", color = "#bdef6b"];
+"22" -> "100" [label = "squaresVisited", color = "#5863ee"];
+"21" -> "99" [label = "squaresVisited", color = "#5863ee"];
+"20" -> "61" [label = "squaresVisited", color = "#5863ee"];
+"19" -> "58" [label = "squaresVisited", color = "#5863ee"];
+"18" -> "53" [label = "squaresVisited", color = "#5863ee"];
+"17" -> "27" [label = "squaresVisited", color = "#5863ee"];
+"16" -> "21" [label = "squaresVisited", color = "#5863ee"];
+"15" -> "20" [label = "squaresVisited", color = "#5863ee"];
+"14" -> "17" [label = "squaresVisited", color = "#5863ee"];
+"13" -> "12" [label = "squaresVisited", color = "#5863ee"];
+"12" -> "10" [label = "squaresVisited", color = "#5863ee"];
+"11" -> "6" [label = "squaresVisited", color = "#5863ee"];
+"10" -> "4" [label = "squaresVisited", color = "#5863ee"];
+"9" -> "31" [label = "squaresVisited", color = "#5863ee"];
+"8" -> "29" [label = "squaresVisited", color = "#5863ee"];
+"7" -> "25" [label = "squaresVisited", color = "#5863ee"];
+"6" -> "47" [label = "squaresVisited", color = "#5863ee"];
+"5" -> "42" [label = "squaresVisited", color = "#5863ee"];
+"4" -> "39" [label = "squaresVisited", color = "#5863ee"];
+"3" -> "3" [label = "squaresVisited", color = "#5863ee"];
+"2" -> "2" [label = "squaresVisited", color = "#5863ee"];
+"1" -> "1" [label = "squaresVisited", color = "#5863ee"];
+"14" -> "ROOT-NODE" [label = "numberOfTurnsTaken", color = "LightSteelBlue1"];
+"4" -> "ROOT-NODE" [label = "numberOfLaddersEncountered", color = "gray"];
+"2" -> "ROOT-NODE" [label = "numberOfSnakesEncountered", color = "#efdf84"];
+"100" -> "ROOT-NODE" [label = "currentPosition", color = "#bdef6b"];
+"6" [color = "wheat3", style = "filled, solid", shape = "box"]
+"ROOT-NODE" [color = "lightblue", style = "filled, solid", shape = "diamond"]
+"5" [color = "wheat3", style = "filled, solid", shape = "box"]
+"4" [color = "wheat3", style = "filled, solid", shape = "box"]
+"3" [color = "wheat3", style = "filled, solid", shape = "box"]
+"2" [color = "wheat3", style = "filled, solid", shape = "box"]
+"1" [color = "wheat3", style = "filled, solid", shape = "box"]
+"72" [color = "wheat3", style = "filled, solid", shape = "box"]
+"90" [color = "wheat3", style = "filled, solid", shape = "box"]
+"61" [color = "wheat3", style = "filled, solid", shape = "box"]
+"99" [color = "wheat3", style = "filled, solid", shape = "box"]
+"56" [color = "wheat3", style = "filled, solid", shape = "box"]
+"84" [color = "wheat3", style = "filled, solid", shape = "box"]
+"27" [color = "wheat3", style = "filled, solid", shape = "box"]
+"53" [color = "wheat3", style = "filled, solid", shape = "box"]
+"10" [color = "wheat3", style = "filled, solid", shape = "box"]
+"12" [color = "wheat3", style = "filled, solid", shape = "box"]
+"39" [color = "wheat3", style = "filled, solid", shape = "box"]
+"97" [color = "wheat3", style = "filled, solid", shape = "box"]
+"75" [color = "wheat3", style = "filled, solid", shape = "box"]
+"66" [color = "wheat3", style = "filled, solid", shape = "box"]
+"52" [color = "wheat3", style = "filled, solid", shape = "box"]
+"63" [color = "wheat3", style = "filled, solid", shape = "box"]
+"60" [color = "wheat3", style = "filled, solid", shape = "box"]
+"47" [color = "wheat3", style = "filled, solid", shape = "box"]
+"25" [color = "wheat3", style = "filled, solid", shape = "box"]
+"31" [color = "wheat3", style = "filled, solid", shape = "box"]
+"16" [color = "wheat3", style = "filled, solid", shape = "box"]
+"13" [color = "wheat3", style = "filled, solid", shape = "box"]
+"100" [color = "wheat3", style = "filled, solid", shape = "box"]
+"98" [color = "wheat3", style = "filled, solid", shape = "box"]
+"96" [color = "wheat3", style = "filled, solid", shape = "box"]
+"95" [color = "wheat3", style = "filled, solid", shape = "box"]
+"94" [color = "wheat3", style = "filled, solid", shape = "box"]
+"93" [color = "wheat3", style = "filled, solid", shape = "box"]
+"92" [color = "wheat3", style = "filled, solid", shape = "box"]
+"91" [color = "wheat3", style = "filled, solid", shape = "box"]
+"89" [color = "wheat3", style = "filled, solid", shape = "box"]
+"88" [color = "wheat3", style = "filled, solid", shape = "box"]
+"87" [color = "wheat3", style = "filled, solid", shape = "box"]
+"86" [color = "wheat3", style = "filled, solid", shape = "box"]
+"85" [color = "wheat3", style = "filled, solid", shape = "box"]
+"83" [color = "wheat3", style = "filled, solid", shape = "box"]
+"82" [color = "wheat3", style = "filled, solid", shape = "box"]
+"81" [color = "wheat3", style = "filled, solid", shape = "box"]
+"80" [color = "wheat3", style = "filled, solid", shape = "box"]
+"79" [color = "wheat3", style = "filled, solid", shape = "box"]
+"78" [color = "wheat3", style = "filled, solid", shape = "box"]
+"77" [color = "wheat3", style = "filled, solid", shape = "box"]
+"76" [color = "wheat3", style = "filled, solid", shape = "box"]
+"74" [color = "wheat3", style = "filled, solid", shape = "box"]
+"73" [color = "wheat3", style = "filled, solid", shape = "box"]
+"71" [color = "wheat3", style = "filled, solid", shape = "box"]
+"70" [color = "wheat3", style = "filled, solid", shape = "box"]
+"69" [color = "wheat3", style = "filled, solid", shape = "box"]
+"68" [color = "wheat3", style = "filled, solid", shape = "box"]
+"67" [color = "wheat3", style = "filled, solid", shape = "box"]
+"65" [color = "wheat3", style = "filled, solid", shape = "box"]
+"64" [color = "wheat3", style = "filled, solid", shape = "box"]
+"62" [color = "wheat3", style = "filled, solid", shape = "box"]
+"59" [color = "wheat3", style = "filled, solid", shape = "box"]
+"58" [color = "wheat3", style = "filled, solid", shape = "box"]
+"57" [color = "wheat3", style = "filled, solid", shape = "box"]
+"55" [color = "wheat3", style = "filled, solid", shape = "box"]
+"54" [color = "wheat3", style = "filled, solid", shape = "box"]
+"51" [color = "wheat3", style = "filled, solid", shape = "box"]
+"50" [color = "wheat3", style = "filled, solid", shape = "box"]
+"49" [color = "wheat3", style = "filled, solid", shape = "box"]
+"48" [color = "wheat3", style = "filled, solid", shape = "box"]
+"46" [color = "wheat3", style = "filled, solid", shape = "box"]
+"45" [color = "wheat3", style = "filled, solid", shape = "box"]
+"44" [color = "wheat3", style = "filled, solid", shape = "box"]
+"43" [color = "wheat3", style = "filled, solid", shape = "box"]
+"42" [color = "wheat3", style = "filled, solid", shape = "box"]
+"41" [color = "wheat3", style = "filled, solid", shape = "box"]
+"40" [color = "wheat3", style = "filled, solid", shape = "box"]
+"38" [color = "wheat3", style = "filled, solid", shape = "box"]
+"37" [color = "wheat3", style = "filled, solid", shape = "box"]
+"36" [color = "wheat3", style = "filled, solid", shape = "box"]
+"35" [color = "wheat3", style = "filled, solid", shape = "box"]
+"34" [color = "wheat3", style = "filled, solid", shape = "box"]
+"33" [color = "wheat3", style = "filled, solid", shape = "box"]
+"32" [color = "wheat3", style = "filled, solid", shape = "box"]
+"30" [color = "wheat3", style = "filled, solid", shape = "box"]
+"29" [color = "wheat3", style = "filled, solid", shape = "box"]
+"28" [color = "wheat3", style = "filled, solid", shape = "box"]
+"26" [color = "wheat3", style = "filled, solid", shape = "box"]
+"24" [color = "wheat3", style = "filled, solid", shape = "box"]
+"23" [color = "wheat3", style = "filled, solid", shape = "box"]
+"22" [color = "wheat3", style = "filled, solid", shape = "box"]
+"21" [color = "wheat3", style = "filled, solid", shape = "box"]
+"20" [color = "wheat3", style = "filled, solid", shape = "box"]
+"19" [color = "wheat3", style = "filled, solid", shape = "box"]
+"18" [color = "wheat3", style = "filled, solid", shape = "box"]
+"17" [color = "wheat3", style = "filled, solid", shape = "box"]
+"15" [color = "wheat3", style = "filled, solid", shape = "box"]
+"14" [color = "wheat3", style = "filled, solid", shape = "box"]
+"11" [color = "wheat3", style = "filled, solid", shape = "box"]
+"9" [color = "wheat3", style = "filled, solid", shape = "box"]
+"8" [color = "wheat3", style = "filled, solid", shape = "box"]
+"7" [color = "wheat3", style = "filled, solid", shape = "box"]
+subgraph "cluster_MESSAGE" {node [style=filled,color=white]; label="MESSAGE"; style=filled;color=lightgrey; }
+}

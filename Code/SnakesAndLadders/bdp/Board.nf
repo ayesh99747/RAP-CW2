@@ -37,9 +37,9 @@ THEORY ListVariablesX IS
   External_Context_List_Variables(Machine(Board))==(?);
   Context_List_Variables(Machine(Board))==(?);
   Abstract_List_Variables(Machine(Board))==(?);
-  Local_List_Variables(Machine(Board))==(LadderTops,LadderBottoms,snakeTails,snakeHeads);
-  List_Variables(Machine(Board))==(LadderTops,LadderBottoms,snakeTails,snakeHeads);
-  External_List_Variables(Machine(Board))==(LadderTops,LadderBottoms,snakeTails,snakeHeads)
+  Local_List_Variables(Machine(Board))==(?);
+  List_Variables(Machine(Board))==(?);
+  External_List_Variables(Machine(Board))==(?)
 END
 &
 THEORY ListVisibleVariablesX IS
@@ -57,7 +57,7 @@ THEORY ListInvariantX IS
   Expanded_List_Invariant(Machine(Board))==(btrue);
   Abstract_List_Invariant(Machine(Board))==(btrue);
   Context_List_Invariant(Machine(Board))==(btrue);
-  List_Invariant(Machine(Board))==(snakeHeads: Length <-> Length & card(snakeHeads) = 6 & snakeTails: Length <-> Length & card(snakeTails) = 6 & LadderBottoms: Length <-> Length & card(LadderBottoms) = 6 & LadderTops: Length <-> Length & card(LadderTops) = 6)
+  List_Invariant(Machine(Board))==(btrue)
 END
 &
 THEORY ListAssertionsX IS
@@ -76,9 +76,9 @@ THEORY ListExclusivityX IS
 END
 &
 THEORY ListInitialisationX IS
-  Expanded_List_Initialisation(Machine(Board))==(snakeHeads,snakeTails,LadderBottoms,LadderTops:={10|->4,2|->5,7|->5,3|->7,6|->7,4|->10},{4|->1,2|->8,5|->3,1|->6,9|->6,8|->8},{3|->1,10|->1,7|->3,5|->6,1|->7,9|->8},{2|->4,9|->2,8|->6,4|->9,2|->10,10|->9});
+  Expanded_List_Initialisation(Machine(Board))==(skip);
   Context_List_Initialisation(Machine(Board))==(skip);
-  List_Initialisation(Machine(Board))==(snakeHeads:={10|->4,2|->5,7|->5,3|->7,6|->7,4|->10} || snakeTails:={4|->1,2|->8,5|->3,1|->6,9|->6,8|->8} || LadderBottoms:={3|->1,10|->1,7|->3,5|->6,1|->7,9|->8} || LadderTops:={2|->4,9|->2,8|->6,4|->9,2|->10,10|->9})
+  List_Initialisation(Machine(Board))==(skip)
 END
 &
 THEORY ListParametersX IS
@@ -110,9 +110,9 @@ THEORY ListPreconditionX END
 THEORY ListSubstitutionX END
 &
 THEORY ListConstantsX IS
-  List_Valuable_Constants(Machine(Board))==(sideLength,Length,board);
+  List_Valuable_Constants(Machine(Board))==(startingPosition,finishingPosition,board,snakes,ladders);
   Inherited_List_Constants(Machine(Board))==(?);
-  List_Constants(Machine(Board))==(sideLength,Length,board)
+  List_Constants(Machine(Board))==(startingPosition,finishingPosition,board,snakes,ladders)
 END
 &
 THEORY ListSetsX IS
@@ -139,7 +139,7 @@ THEORY ListPropertiesX IS
   Abstract_List_Properties(Machine(Board))==(btrue);
   Context_List_Properties(Machine(Board))==(btrue);
   Inherited_List_Properties(Machine(Board))==(btrue);
-  List_Properties(Machine(Board))==(sideLength: NAT1 & sideLength = 10 & Length <: NAT1 & Length = 1..sideLength & board: POW(NAT1*NAT1) & board = Length*Length)
+  List_Properties(Machine(Board))==(startingPosition: NAT1 & startingPosition = 1 & finishingPosition: NAT1 & finishingPosition = 100 & board <: NAT1 & board = startingPosition..finishingPosition & snakes: NAT1 +-> NAT1 & snakes = {31|->4,16|->13,47|->25,63|->60,66|->52,97|->75} & ladders: NAT1 +-> NAT1 & ladders = {3|->39,10|->12,27|->53,56|->84,61|->99,72|->90})
 END
 &
 THEORY ListSeenInfoX END
@@ -147,19 +147,15 @@ THEORY ListSeenInfoX END
 THEORY ListANYVarX END
 &
 THEORY ListOfIdsX IS
-  List_Of_Ids(Machine(Board)) == (sideLength,Length,board | ? | LadderTops,LadderBottoms,snakeTails,snakeHeads | ? | ? | ? | ? | ? | Board);
+  List_Of_Ids(Machine(Board)) == (startingPosition,finishingPosition,board,snakes,ladders | ? | ? | ? | ? | ? | ? | ? | Board);
   List_Of_HiddenCst_Ids(Machine(Board)) == (? | ?);
-  List_Of_VisibleCst_Ids(Machine(Board)) == (sideLength,Length,board);
+  List_Of_VisibleCst_Ids(Machine(Board)) == (startingPosition,finishingPosition,board,snakes,ladders);
   List_Of_VisibleVar_Ids(Machine(Board)) == (? | ?);
   List_Of_Ids_SeenBNU(Machine(Board)) == (?: ?)
 END
 &
 THEORY ConstantsEnvX IS
-  Constants(Machine(Board)) == (Type(sideLength) == Cst(btype(INTEGER,?,?));Type(Length) == Cst(SetOf(btype(INTEGER,"[Length","]Length")));Type(board) == Cst(SetOf(btype(INTEGER,?,?)*btype(INTEGER,?,?))))
-END
-&
-THEORY VariablesEnvX IS
-  Variables(Machine(Board)) == (Type(LadderTops) == Mvl(SetOf(btype(INTEGER,?,?)*btype(INTEGER,?,?)));Type(LadderBottoms) == Mvl(SetOf(btype(INTEGER,?,?)*btype(INTEGER,?,?)));Type(snakeTails) == Mvl(SetOf(btype(INTEGER,?,?)*btype(INTEGER,?,?)));Type(snakeHeads) == Mvl(SetOf(btype(INTEGER,?,?)*btype(INTEGER,?,?))))
+  Constants(Machine(Board)) == (Type(startingPosition) == Cst(btype(INTEGER,?,?));Type(finishingPosition) == Cst(btype(INTEGER,?,?));Type(board) == Cst(SetOf(btype(INTEGER,"[board","]board")));Type(snakes) == Cst(SetOf(btype(INTEGER,?,?)*btype(INTEGER,?,?)));Type(ladders) == Cst(SetOf(btype(INTEGER,?,?)*btype(INTEGER,?,?))))
 END
 &
 THEORY TCIntRdX IS

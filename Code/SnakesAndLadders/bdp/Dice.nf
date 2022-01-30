@@ -37,9 +37,9 @@ THEORY ListVariablesX IS
   External_Context_List_Variables(Machine(Dice))==(?);
   Context_List_Variables(Machine(Dice))==(?);
   Abstract_List_Variables(Machine(Dice))==(?);
-  Local_List_Variables(Machine(Dice))==(lastNumber);
-  List_Variables(Machine(Dice))==(lastNumber);
-  External_List_Variables(Machine(Dice))==(lastNumber)
+  Local_List_Variables(Machine(Dice))==(?);
+  List_Variables(Machine(Dice))==(?);
+  External_List_Variables(Machine(Dice))==(?)
 END
 &
 THEORY ListVisibleVariablesX IS
@@ -57,7 +57,7 @@ THEORY ListInvariantX IS
   Expanded_List_Invariant(Machine(Dice))==(btrue);
   Abstract_List_Invariant(Machine(Dice))==(btrue);
   Context_List_Invariant(Machine(Dice))==(btrue);
-  List_Invariant(Machine(Dice))==(lastNumber <: INTEGER & card(lastNumber)<=1)
+  List_Invariant(Machine(Dice))==(btrue)
 END
 &
 THEORY ListAssertionsX IS
@@ -76,9 +76,9 @@ THEORY ListExclusivityX IS
 END
 &
 THEORY ListInitialisationX IS
-  Expanded_List_Initialisation(Machine(Dice))==(lastNumber:={});
+  Expanded_List_Initialisation(Machine(Dice))==(skip);
   Context_List_Initialisation(Machine(Dice))==(skip);
-  List_Initialisation(Machine(Dice))==(lastNumber:={})
+  List_Initialisation(Machine(Dice))==(skip)
 END
 &
 THEORY ListParametersX IS
@@ -93,37 +93,26 @@ THEORY ListConstraintsX IS
 END
 &
 THEORY ListOperationsX IS
-  Internal_List_Operations(Machine(Dice))==(roll);
-  List_Operations(Machine(Dice))==(roll)
+  Internal_List_Operations(Machine(Dice))==(?);
+  List_Operations(Machine(Dice))==(?)
 END
 &
-THEORY ListInputX IS
-  List_Input(Machine(Dice),roll)==(number)
-END
+THEORY ListInputX END
 &
-THEORY ListOutputX IS
-  List_Output(Machine(Dice),roll)==(?)
-END
+THEORY ListOutputX END
 &
-THEORY ListHeaderX IS
-  List_Header(Machine(Dice),roll)==(roll(number))
-END
+THEORY ListHeaderX END
 &
 THEORY ListOperationGuardX END
 &
-THEORY ListPreconditionX IS
-  List_Precondition(Machine(Dice),roll)==(number: 1..6)
-END
+THEORY ListPreconditionX END
 &
-THEORY ListSubstitutionX IS
-  Expanded_List_Substitution(Machine(Dice),roll)==(number: 1..6 | lastNumber:={number});
-  List_Substitution(Machine(Dice),roll)==(lastNumber:={number})
-END
+THEORY ListSubstitutionX END
 &
 THEORY ListConstantsX IS
-  List_Valuable_Constants(Machine(Dice))==(?);
+  List_Valuable_Constants(Machine(Dice))==(diceNumbers);
   Inherited_List_Constants(Machine(Dice))==(?);
-  List_Constants(Machine(Dice))==(?)
+  List_Constants(Machine(Dice))==(diceNumbers)
 END
 &
 THEORY ListSetsX IS
@@ -150,29 +139,23 @@ THEORY ListPropertiesX IS
   Abstract_List_Properties(Machine(Dice))==(btrue);
   Context_List_Properties(Machine(Dice))==(btrue);
   Inherited_List_Properties(Machine(Dice))==(btrue);
-  List_Properties(Machine(Dice))==(btrue)
+  List_Properties(Machine(Dice))==(diceNumbers <: NAT1 & diceNumbers = 1..6)
 END
 &
 THEORY ListSeenInfoX END
 &
-THEORY ListANYVarX IS
-  List_ANY_Var(Machine(Dice),roll)==(?)
-END
+THEORY ListANYVarX END
 &
 THEORY ListOfIdsX IS
-  List_Of_Ids(Machine(Dice)) == (? | ? | lastNumber | ? | roll | ? | ? | ? | Dice);
+  List_Of_Ids(Machine(Dice)) == (diceNumbers | ? | ? | ? | ? | ? | ? | ? | Dice);
   List_Of_HiddenCst_Ids(Machine(Dice)) == (? | ?);
-  List_Of_VisibleCst_Ids(Machine(Dice)) == (?);
+  List_Of_VisibleCst_Ids(Machine(Dice)) == (diceNumbers);
   List_Of_VisibleVar_Ids(Machine(Dice)) == (? | ?);
   List_Of_Ids_SeenBNU(Machine(Dice)) == (?: ?)
 END
 &
-THEORY VariablesEnvX IS
-  Variables(Machine(Dice)) == (Type(lastNumber) == Mvl(SetOf(btype(INTEGER,?,?))))
-END
-&
-THEORY OperationsEnvX IS
-  Operations(Machine(Dice)) == (Type(roll) == Cst(No_type,btype(INTEGER,?,?)))
+THEORY ConstantsEnvX IS
+  Constants(Machine(Dice)) == (Type(diceNumbers) == Cst(SetOf(btype(INTEGER,"[diceNumbers","]diceNumbers"))))
 END
 &
 THEORY TCIntRdX IS

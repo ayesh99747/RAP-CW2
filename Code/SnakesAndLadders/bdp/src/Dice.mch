@@ -1,25 +1,17 @@
 ﻿/* Dice
  * Author: ayesh
  * Creation date: 26/01/2022
+ *
+ * The Dice Machine is used to represent a 6 sided dice.
  */
 MACHINE
     Dice
 
-ABSTRACT_VARIABLES
-    lastNumber
+CONCRETE_CONSTANTS
+    diceNumbers // This constant set is used to represent the sides of a dice.
 
-INVARIANT
-    lastNumber <: INTEGER & card ( lastNumber ) <= 1
-
-INITIALISATION
-    lastNumber := {}
-
-OPERATIONS
-    roll ( number ) =
-    PRE
-        number : 1 .. 6
-    THEN
-        lastNumber := { number }
-    END
+PROPERTIES
+    diceNumbers <: NAT1  // The set is a subset of the Natural number set.
+    & diceNumbers = 1 .. 6 // The set has numbers from 1 to 6.
 
 END

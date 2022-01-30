@@ -1,0 +1,21 @@
+[?]
+IF((position + firstRoll) = snakeHead) THEN
+	position := snakeTail;
+ELSE
+	IF(position + firstRoll) = ladderBottom) THEN
+		position := ladderTop;
+	ELSE
+		position := position + firstRoll;
+	END
+END
+
+IF((position + secondRoll) = snakeHead) THEN
+	position := snakeTail;
+ELSE
+	IF((position + secondRoll) = ladderBottom) THEN
+		position := ladderTop;
+	ELSE
+		position := position + secondRoll;
+	END
+END
+[position = 100 & firstRoll > 0 & firstRoll < 7 & secondRoll > 0 & secondRoll < 7]
