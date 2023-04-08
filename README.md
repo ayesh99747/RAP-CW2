@@ -1,4 +1,4 @@
-# Snakes & Ladders Board Game
+# Snakes & Ladders Board Game - Reasoning about Programs Coursework 2
 This repository contains the B specification of a Snakes & Ladders board game developed using Atelier B & ProB tools.
 
 ## Introduction
